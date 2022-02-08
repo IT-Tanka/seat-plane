@@ -122,8 +122,6 @@ const checkSeat= (bookingSeat, form, data, id)=>{
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
       const formData=new FormData(form);
-    console.log('formData: ', [...formData]);
-
       const booking=[...formData].map(([, value])=>value);
       for (let i=0;i<data.length; i++){
         data[i].seat=booking[i];

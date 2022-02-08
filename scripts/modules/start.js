@@ -5,13 +5,11 @@ const createTitle=(title)=>{
       className: 'title',
       textContent: title,
   });
-  
   return h1;
 };
 
 const createMain=()=>{
   const main=createElement('main',{className:'person-data',});
-  
   return main;
 };
 
@@ -53,7 +51,7 @@ const createFirstForm=(data)=>{
   });
   form.append(labelTour,select, label, input, button);
   return form;
-}
+};
 
 const start=(app, title, data)=>{
   const h1=createTitle(title);

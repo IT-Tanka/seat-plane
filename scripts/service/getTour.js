@@ -7,8 +7,6 @@ const getData=()=>fetch(URL_API)
   }
   throw new Error(response.status);
 })
-// .then(data=>console.log(data))
 .catch((err)=>{console.error(err)});
-
 
 export default getData;
